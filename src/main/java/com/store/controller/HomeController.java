@@ -13,7 +13,7 @@ public class HomeController {
     @GetMapping("/home")
     public String getHome(Model model) {
 
-        // AttributeModelにhomeコンテンツのフラグメントを登録する
+        // modelにフラグメントを登録する
         model.addAttribute("contents", "home :: home_contents");
 
         return "base";
